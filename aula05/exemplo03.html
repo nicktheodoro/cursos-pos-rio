@@ -1,0 +1,23 @@
+<script>
+  /*
+    Escreva um programa que verifica o inverso no número e diz se é palídromo.
+  */
+
+  let numReverso = '';
+  const numDigitado = 3223;
+  let num = numDigitado;
+
+  while (num != 0) {
+    numReverso += parseInt(num % 10);
+    num = parseInt(num / 10);
+  }
+
+  console.log(numDigitado)
+  console.log(numReverso)
+
+  if (numDigitado == numReverso) {
+    console.log("É palídromo")
+  } else {
+    console.log("Não é palídromo")
+  }
+</script>
