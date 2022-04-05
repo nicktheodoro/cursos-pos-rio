@@ -1,0 +1,16 @@
+<script>
+  /*
+    Exemplo de uma função que retorne o nome inteiro do usuário.
+  */
+
+  primeiroNome = prompt("Digite o seu primeiro nome: ");
+  segundoNome = prompt("Digite o seu segundo nome: ");
+
+  function RetornarNomeInteiro(primeiroNome, segundoNome) {
+    nomeCompleto = `${primeiroNome.trim()} ${segundoNome.trim()}`;
+
+    return nomeCompleto;
+  }
+
+  document.write(RetornarNomeInteiro(primeiroNome, segundoNome));
+</script>
