@@ -1,0 +1,13 @@
+<script>
+  let paragrafo = document.createElement("p");
+  function contador() {
+    let indice = 1;
+      setInterval(() => {
+        paragrafo.innerHTML = `<h1> ${indice} </h1>`;
+        document.body.appendChild(paragrafo);
+        indice++;
+      }, 1000);
+  }
+
+  contador();
+</script>
