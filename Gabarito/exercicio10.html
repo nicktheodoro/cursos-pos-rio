@@ -1,0 +1,15 @@
+<script>
+  /* 
+    Leia 5 valores reais e calcule seu somatório utilizando a instrução 'Do While'.
+  */
+
+  let i = 1;
+  let soma = 0;
+
+  do {
+    soma += parseFloat(prompt(`Digite o ${i}° valor :`));
+    i++;
+  } while (i <= 5)
+
+  document.write(`<h1>A soma dos valores é: ${soma}</h1>`);
+</script>

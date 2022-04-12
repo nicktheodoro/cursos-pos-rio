@@ -1,0 +1,16 @@
+<script>
+  /* 
+    Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius (baseado na fórmula abaixo): 
+  */
+
+  let grausEmFahrenheit = parseFloat(
+    prompt("Digite um valor em graus Fahrenheit:")
+  );
+  let grausEmCelsius = (5 * grausEmFahrenheit - 160) / 9;
+
+  document.write(
+    `<h1>A temperatura em graus Celsius é de ${grausEmCelsius.toFixed(
+      2
+    )}°C </h1>`
+  );
+</script>

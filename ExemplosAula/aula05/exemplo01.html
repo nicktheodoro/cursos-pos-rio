@@ -1,0 +1,15 @@
+<script>
+  /*
+    Uma fábrica controla o tempo de trabalho sem acidentes pela quantidade de dias. Faça um
+    algoritmo para converter este tempo em anos, meses e dias. Assuma que cada mês possui sempre
+    30 dias.
+  */
+
+  let quantidadeDias = 396;
+
+  let anos = parseInt(quantidadeDias / 365)
+  let meses = parseInt((quantidadeDias % 365) / 30)
+  let dias = parseInt((quantidadeDias % 365) % 30)
+
+  console.log(anos, meses, dias)
+</script>
