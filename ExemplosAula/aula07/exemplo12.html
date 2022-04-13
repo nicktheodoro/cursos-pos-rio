@@ -1,0 +1,23 @@
+<script>
+  /*
+    Declarando objeto dinânimo e escrevendo propriedades na tela.
+  */
+
+  let pessoa = {
+    nome: prompt("Digite o seu nome: "),
+    idade: parseFloat(prompt("Digite a sua idade: ")),
+    cpf: prompt("Digite o seu cpf: "),
+    sexo: prompt("Digite o se seu sexo: ").slice(0, 1).toUpperCase(),
+  };
+
+  function escreverObjetoNaTela(objeto) {
+    console.log(objeto);
+    document.write(`<h2>Nome: ${objeto.nome}</h2>`);
+    document.write(`<h2>Idade: ${objeto.idade}</h2>`);
+    document.write(`<h2>Cpf: ${objeto.cpf}</h2>`);
+    document.write(`<h2>Sexo: ${objeto.sexo}</h2>`);
+    document.write(`<h2>Sexo: ${objeto.rg}</h2>`);
+  }
+
+  escreverObjetoNaTela(pessoa);
+</script>

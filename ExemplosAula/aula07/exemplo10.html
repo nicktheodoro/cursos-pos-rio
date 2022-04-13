@@ -1,0 +1,25 @@
+<script>
+  /* 
+    Exemplo de algoritmo que veririca se uma palavra é palíndromo ou não.
+  */
+ 
+  let palavra = prompt("Digite uma palavra e veja se é um palíndromo: ").toUpperCase().trim();
+
+  let palindromo = palavra.toUpperCase()
+                          .split("")
+                          .reverse()
+                          .join("");
+  // toUpperCase() -> tranforma tudo para maísculo = VITOR;
+  // split("") -> separa a palavra em um array = ['V', 'I', 'T', 'O', 'R'];
+  // reverse() -> inverte o array = ['R', 'O', 'T', 'I', 'V'];
+  // join() -> junta o array e retorna uma string = 'ROTIV';
+  
+  console.log('palavra: ', palavra);
+  console.log('palíndromo: ', palindromo);
+
+  if (palavra == palindromo) {
+    document.write("É palíndromo");
+  } else {
+    document.write("Não é palíndromo");
+  }
+</script>

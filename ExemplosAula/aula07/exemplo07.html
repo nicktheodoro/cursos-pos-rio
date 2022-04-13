@@ -1,0 +1,21 @@
+<script>
+  /*
+    O “slice()” extrai uma sessão de um array e retorna um novo array, veja:
+  */
+
+  let array1 = ["branco", 10, 20, 30, "novo elemento"];
+  let novoArray = array1.slice(1, 3);
+
+  let nomeCompleto = "Nicolas Theodoro Lopes";
+  // split -> ['Nicolas', 'Theodoro', 'Lopes'];
+  // slice -> ['Nicolas']
+  // [0] ->'Nicolas'
+  // toLowerCase() -> 'nicolas'
+
+  // imprime 'Nicolas' no console.log()
+  // string funciona como array -> ["N", "i", "c", "o", "l", "a", "s"];
+  console.log(nomeCompleto.slice(0, 8));
+
+  // concatenando métodos de array e string
+  console.log(nomeCompleto.split(" ").slice(0, 1)[0].toLowerCase());
+</script>
