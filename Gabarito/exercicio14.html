@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Escreva um algoritmo que mostre os números ímpares de 1 até n. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ímpares de 1 até n</title>
+    <style>
+      /* mudando o tamanho da letra e a cor da letra via style no head do html */
+      body {
+        font-size: 32px;
+        color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let numero = parseFloat(prompt("Digite um número :"));
+
+      let num = numero;
+
+      for (let i = 1; i <= num; i++) {
+        if (i % 2 != 0) {
+          document.write(`${i}, `);
+        } else if (i == num) {
+          document.write(`${i}.`);
+        }
+      }
+    </script>
+  </body>
+</html>
