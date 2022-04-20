@@ -1,0 +1,40 @@
+body {
+  background: blueviolet;
+  font: normal 15pt Arial;
+  /* 
+  font-style: normal;
+  font-size: 15pt;
+  font-family: Arial, Helvetica, sans-serif;
+   */
+}
+
+header {
+  /* muda cor da fonte */
+  color: white;
+  /* muda o alinhamento do texto */
+  text-align: center;
+}
+
+section {
+  /* muda cor de fundo */
+  background: white;
+  /* aplica arredondamento na borda */
+  border-radius: 10px;
+  /* aplica espaçamento interno */
+  padding: 15px;
+  /* define a largura do elemento */
+  width: 500px;
+  /* define uma margem no eixo x automatica */
+  margin: auto;
+  /* define um sombreamento no elemento */
+  box-shadow: 5px 5px 10px black;
+}
+
+footer {
+  /* muda cor da fonte */
+  color: white;
+  /* muda o alinhamento do texto */
+  text-align: center;
+  /* aplica italico na fonte */
+  font-style: italic;
+}
