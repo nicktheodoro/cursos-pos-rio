@@ -1,5 +1,5 @@
 body {
-  background: coral;
+  background: blueviolet;
   font: normal 15pt Arial;
 }
 
@@ -13,22 +13,30 @@ section {
   border-radius: 10px;
   padding: 15px;
   width: 500px;
-  margin: auto; /* cetraliza conteúdo */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
+  margin: 48px auto 0 auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.574);
 }
 
-div {
+div#txt p{
+  text-align: justify;
+  line-height: 26px;
+}
+
+div#img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px;
 }
 
-img#img {
+div#img img{
   margin-top: 12px;
   height: 100%;
-  width: 100%;
+  width: 80%;
   object-fit: scale-down;
-  border-radius: 10px;
+  border-radius: 50%;
+  border: solid 3pt;
 }
-
 
 footer {
   color: white;
