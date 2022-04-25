@@ -1,0 +1,18 @@
+<script>
+  /*
+    Faça um programa com uma função chamada calculaImposto. A função possui dois parâmetros formais: valor e taxaImposto. A função deve retornar o valor com seu imposto calculado.
+  */
+
+  let valor = parseFloat(prompt("Digite o valor em reais:"));
+  let taxaImposto = parseFloat(prompt("Digite a % da taxa de imposto:"));
+
+  function calculaImposto(valor, taxaImposto) {
+    if (isNaN(valor) || isNaN(taxaImposto)) {
+      alert("Dados Inválidos!");
+    } else {
+      document.write(`<h1>${valor + valor * (taxaImposto / 100)}</h1>`);
+    }
+  }
+
+  calculaImposto(valor, taxaImposto);
+</script>

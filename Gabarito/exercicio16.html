@@ -9,13 +9,13 @@
 
   if (arestaA + arestaB > arestaC && arestaA + arestaC > arestaB && arestaB + arestaC > arestaA) {
     if (arestaA == arestaB && arestaA == arestaC) {
-      document.write("Triângulo Equilátero");
+      document.write("<h1>Triângulo Equilátero</h1>");
     } else if (arestaA == arestaB || arestaA == arestaC || arestaB == arestaC) {
-      document.write("Isósceles");
+      document.write("<h1>Isósceles</h1>");
     } else {
-      document.write("Escaleno");
+      document.write("<h1>Escaleno</h1>");
     }
   } else {
-    document.write("Não forma um trinângulo");
+    document.write("<h1>Não forma um trinângulo</h1>");
   }
 </script>
