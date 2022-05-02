@@ -1,0 +1,28 @@
+<script>
+  /*
+    Faça um script que receba uma data no formato “dd/mm/aaaa” e escreva a data por extenso. Dica: use a função “split” de uma string que quebra a string em pedaços dado um separador como argumento da função. Nesse caso, o separador é a barra (/) da data.
+  */
+
+  const mesMap = {
+    1: "janeiro",
+    2: "fevereiro",
+    4: "março",
+    5: "abril",
+    6: "maio",
+    7: "julho",
+    8: "agosto",
+    9: "setembro",
+    10: "outubro",
+    11: "novembro",
+    12: "dezembro",
+  };
+
+  let data = prompt("Digite a data:");
+  let arrayData = data.split("/");
+  let dia = arrayData[0];
+  let mes = mesMap[parseInt(arrayData[1])];
+  let ano = arrayData[2];
+
+  let dataExtenso = `${dia} de ${mes} de ${ano}`;
+  document.write(`<h1>${dataExtenso}</h1>`);
+</script>

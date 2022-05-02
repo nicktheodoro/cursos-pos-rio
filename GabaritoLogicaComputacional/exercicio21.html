@@ -1,0 +1,21 @@
+<script>
+  /*
+    Faça um programa com uma função que sabe definir se uma palavra é palíndromo ou não. A função possui um parâmetro formal: palavra. A função deve retornar “Palíndromo” quando for palíndromo e “Não é palíndromo” quando não for.
+  */
+
+  let palavra = prompt("Digite uma palavra e veja se é um palíndromo: ")
+    .toUpperCase()
+    .trim();
+
+  function verificaPalindromo(palavra) {
+    let palindromo = palavra.toUpperCase().split("").reverse().join("");
+
+    if (palavra == palindromo) {
+      document.write("<h1>É palíndromo</h1>");
+    } else {
+      document.write("<h1>Não é palíndromo</h1>");
+    }
+  }
+
+  verificaPalindromo(palavra);
+</script>

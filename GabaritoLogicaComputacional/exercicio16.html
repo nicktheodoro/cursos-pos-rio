@@ -1,0 +1,21 @@
+<script>
+  /*
+    Escreva um algoritmo para verificar se um triângulo é Equilátero, Isósceles ou Escaleno.
+  */
+
+  let arestaA = parseFloat(prompt("Digite o tamanho da aresta A: "));
+  let arestaB = parseFloat(prompt("Digite o tamanho da aresta B: "));
+  let arestaC = parseFloat(prompt("Digite o tamanho da aresta C: "));
+
+  if (arestaA + arestaB > arestaC && arestaA + arestaC > arestaB && arestaB + arestaC > arestaA) {
+    if (arestaA == arestaB && arestaA == arestaC) {
+      document.write("<h1>Triângulo Equilátero</h1>");
+    } else if (arestaA == arestaB || arestaA == arestaC || arestaB == arestaC) {
+      document.write("<h1>Isósceles</h1>");
+    } else {
+      document.write("<h1>Escaleno</h1>");
+    }
+  } else {
+    document.write("<h1>Não forma um trinângulo</h1>");
+  }
+</script>

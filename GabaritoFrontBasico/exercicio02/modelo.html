@@ -2,23 +2,21 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Verificador de Idade</title>
+    <title>Estação atual</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+
+  <body onload="carregar()">
     <header>
-      <h1>Verificador de Idade</h1>
+      <h1>Estação atual....</h1>
     </header>
 
     <section>
-      <div>
-        <p>Aqui vai um conteúdo...</p>
-      </div>
+      <div id="container-txt"></div>
 
-      <div>
-        <p>Aqui vai outro conteúdo...</p>
+      <div id="container-img">
+        <img id="imagem" src="./assets/inverno.jpg" alt="Foto estação" />
       </div>
     </section>
 
