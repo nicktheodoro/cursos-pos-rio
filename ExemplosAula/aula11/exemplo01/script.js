@@ -18,10 +18,30 @@ function verificar() {
 
     if (formSexo[0].checked) {
       genero = "Mulher";
-      img.setAttribute("src", "./assets/bebe-f.png");
+      if(idade >= 0 && idade <= 4) {
+        img.setAttribute("src", "./assets/bebe-f.png");
+      } else if(idade >= 5 && idade <= 15) {
+        img.setAttribute("src", "./assets/crianca-f.png");
+      } else if(idade >= 16 && idade <= 21) {
+        img.setAttribute("src", "./assets/jovem-f.png");
+      } else if(idade <= 50) {
+        img.setAttribute("src", "./assets/adulto-f.png");
+      } else {
+        img.setAttribute("src", "./assets/idoso-f.jpg");
+      }
     } else {
       genero = "Homem";
-      img.setAttribute("src", "./assets/bebe-m.png");
+      if(idade >= 0 && idade <= 4) {
+        img.setAttribute("src", "./assets/bebe-m.png");
+      } else if(idade >= 5 && idade <= 15) {
+        img.setAttribute("src", "./assets/crianca-m.png");
+      } else if(idade >= 16 && idade <= 21) {
+        img.setAttribute("src", "./assets/jovem-m.png");
+      } else if(idade <= 50) {
+        img.setAttribute("src", "./assets/adulto-m.png");
+      } else {
+        img.setAttribute("src", "./assets/idoso-m.png");
+      }
     }
 
     resultado.innerHTML = `Detectamos ${genero} com ${idade} anos.`;
