@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+table,
+label,
+input,
+textarea {
+  font-family: "Roboto Slab", serif;
+}
+
+/* Cabecalho */
+.cabecalho .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Menu */
+.menu {
+  margin-top: 10px;
+}
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+.menu ul li a {
+  color: #1a1a1a;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+.menu ul li a:hover {
+  color: #ff8000;
+}
+
+/* Titulo */
+main .container-titulo {
+  width: 100%;
+  background-color: #ff8000;
+  padding: 15px;
+}
+
+main .container-titulo h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+/* Modulo Sobre */
+.modulo {
+  width: 100%;
+  padding: 50px 0;
+}
+.sobre {
+  background-color: #ddd;
+}
+.subtitulo {
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Modulo Tabela */
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabela thead {
+  background-color: #333;
+  color: #fff;
+}
+.tabela td {
+  border: 1px solid #333;
+  padding: 7px;
+}
+
+/* Modulo Locais Interesse */
+.lista ul {
+  text-align: center;
+}
+
+.lista ul li {
+  list-style: none;
+  display: inline-block;
+  background-color: #ff8000;
+  padding: 4px 8px;
+  margin: 0 3px;
+  color: #fff;
+  text-align: center;
+}
