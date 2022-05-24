@@ -15,6 +15,7 @@ li,
 table,
 label,
 input,
+button,
 textarea {
   font-family: "Roboto Slab", serif;
 }
@@ -79,6 +80,29 @@ main .container-titulo h1 {
   margin-bottom: 30px;
 }
 
+.container-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.btn-saiba-mais {
+  background-color: #ff8000;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  transition: transform .3s;
+}
+.btn-saiba-mais:hover {
+  transform: scale(1.2);
+  filter: brightness(0.95);
+}
+.btn-saiba-mais a{
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
 /* Modulo Tabela */
 .tabela {
   width: 100%;
@@ -94,16 +118,33 @@ main .container-titulo h1 {
 }
 
 /* Modulo Locais Interesse */
-.lista ul {
-  text-align: center;
+.lista-locais ul {
+  display: flex;
+  justify-content: center;
 }
-
-.lista ul li {
+.lista-locais ul li {
   list-style: none;
   display: inline-block;
-  background-color: #ff8000;
-  padding: 4px 8px;
-  margin: 0 3px;
   color: #fff;
+  background: #ff8000;
+  padding: 7px 12px;
+  margin: 0 3px;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+.rodape {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #333;
+  background-image: url(../assets/padrao-fundo-rodape.png);
+  border-top: 6px solid #ff8000;
   text-align: center;
+  clear: both;
+}
+.rodape .logo {
+  margin-bottom: 30px;
+}
+.rodape .creditos {
+  color: #fff;
 }
