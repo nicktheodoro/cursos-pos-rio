@@ -148,3 +148,51 @@ main .container-titulo h1 {
 .rodape .creditos {
   color: #fff;
 }
+
+.mapa {
+  width: 100%;
+}
+.mapa img {
+  float: left;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.notaveis {
+  float: left;
+}
+.notaveis ol {
+  font-size: 22px;
+  float: left;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sugestao-texto {
+  text-align: center;
+}
+
+.form-container {
+  width: 100%;
+  margin: 15px 0;
+}
+.form {
+  width: 100%;
+  min-height: 40px;
+  font-size: 17px;
+  text-indent: 10px;
+}
+.form-botao {
+  padding: 15px 30px;
+  background-color: #ff8000;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  transition: transform .3s;
+}
+.form-botao:hover {
+  background-color: #ff9b36;
+}
