@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header h1 {
+  text-align: center;
+}
+
+div.container-img {
+  width: 100%;
+}
+
+div.arara {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+div.arara img {
+  width: 400px;
+}
+
+section.container {
+  width: 100%;
+
+  display: flex;
+
+  padding: 10px;
+}
+
+section div.container-principal {
+  padding: 5px;
+
+  text-align: justify;
+}
+
+section div div.interno {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+section div.container-secundario img {
+  width: 300px;
+}
+
+img {
+  width: 150px;
+}
