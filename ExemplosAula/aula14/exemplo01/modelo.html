@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Demo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importando a referencia de css do bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Importando a referencia de js do bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/internet.svg" alt="Logo da empresa" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container titulo">
+        <h1>Push WebSystems</h1>
+      </div>
+
+      <div class="container descricao">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+          voluptatem non obcaecati adipisci ducimus suscipit mollitia nobis
+          earum autem. Ad, excepturi quia? Sequi provident rerum voluptatem
+          distinctio obcaecati? Repellat, rem!
+        </p>
+      </div>
+
+      <div class="container cards mt-5">
+        <div class="row d-flex ">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/sistema.svg" class="card-img-top mx-auto" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sistema Web</h5>
+                <p class="card-text">Desenvolvemos o sistema ideal para atender as demandas do seu negócio e totalmente web.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/aplicativo.svg" class="card-img-top mx-auto" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aplicativos</h5>
+                <p class="card-text">Criamos aplicativos sob demanda aplicado a sua regra de negócio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="./assets/chatbot.svg" class="card-img-top mx-auto" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chatbot</h5>
+                <p class="card-text">Garanta um atendimento escalável, ofertando uma ótima experiência ao usuário, além de gerar muitos leads ao seu negócio.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

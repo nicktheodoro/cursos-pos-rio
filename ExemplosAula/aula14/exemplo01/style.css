@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: 'Quicksand', sans-serif;
+}
+
+header nav.navbar img {
+  width: 50px;
+}
+
+main {
+ margin: 32px 0;
+}
+
+main div.titulo {
+  text-align: center;
+}
+
+main div.descricao {
+  text-align: center;
+}
+
+main div.cards div.card {
+  text-align: center;
+  min-height: 350px;
+}
+
+main div.cards img {
+  width: 150px;
+  padding: 20px;
+  border-bottom: solid thin rgba(0, 0, 0, 0.175);
+}
+
