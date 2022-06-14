@@ -1,0 +1,139 @@
+html,
+body {
+  height: auto;
+  min-height: 100%;
+}
+
+.cabecalho {
+  width: 100%;
+  height: 66px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: all 150ms linear;
+}
+.cabecalho-container {
+  width: 100%;
+  height: 66px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.modulo {
+  width: 100%;
+  background-color: #fff;
+  padding: 60px 0;
+  position: relative;
+}
+.botao {
+  width: 180px;
+  height: 45px;
+  border: 0;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.gradiente-padrao {
+  background-image: linear-gradient(to left, #ed503d, #ea008d);
+  color: #fff;
+}
+.gradiente-padrao:hover {
+  background-image: linear-gradient(to right, #ed503d, #ea008d);
+}
+.botao-centralizado {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.desabilitado,
+.desabilitado:hover {
+  background-image: linear-gradient(to left, #ccc, #ddd);
+  color: #aaa;
+}
+
+/* Módulo ligar/desligar */
+.ligar-desligar {
+  width: 100%;
+  height: 400px;
+  background-color: #1a1a1a;
+  position: relative;
+  transition: all 150ms linear;
+}
+.ligar-desligar-container {
+  position: relative;
+  float: left;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ligar-desligar-icone {
+  color: #fff;
+  font-size: 78px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.luz-ligada {
+  background-color: #ebd234;
+  transition: all 150ms linear;
+}
+
+/* Módulo com formulário de um campo */
+.form-container {
+  position: relative;
+}
+.form-inteiro {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #ed503d;
+  font-size: 28px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.form-nome-botao {
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Girar tela */
+.barrel-roll {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/fundo_star_fox.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#botao-girar {
+  margin-top: 60px;
+}
+
+/* Módulo de botões para alterar a imagem de fundo */
+.modulo-fundo-imagens {
+  min-height: 650px;
+  background-image: url(../img/imagem-coala.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 150ms linear;
+}
+.botao-fundo-imagem {
+  width: 160px;
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #343a40;
+  display: table;
+  margin-bottom: 5px;
+}
