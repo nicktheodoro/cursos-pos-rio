@@ -1,0 +1,17 @@
+[
+  {
+    "nomeProduto": "Tenis",
+    "Descricaoproduto": "Descricao tenis",
+    "preco": 22.99
+  },
+  {
+    "nomeProduto": "Camisa",
+    "Descricaoproduto": "Descricao camisa",
+    "preco": 22.99
+  },
+  {
+    "nomeProduto": "short",
+    "Descricaoproduto": "Descricao short",
+    "preco": 32.99
+  }
+]

@@ -1,0 +1,23 @@
+.cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 24%;
+  border: solid 3pt;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 80%;
+  padding: 16px;
+  border-bottom: solid thin;
+}
