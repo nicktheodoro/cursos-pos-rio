@@ -13,12 +13,11 @@ let form = {
 };
 
 form.btnCadastrar.addEventListener("click", (evento) => {
-  // evento.preventDefault();
+  evento.preventDefault();
 
   let nome = form.campoNome.value;
   let valor = form.campoValor.value;
   let quantidadeEstoque = form.campoQuantidade.value;
-
   if (!nome) {
     alert("O nome precisa ser preenchido.");
   } else if (!valor) {
@@ -28,24 +27,8 @@ form.btnCadastrar.addEventListener("click", (evento) => {
   }
 
   let produto = { nome, valor, quantidadeEstoque };
-  adicionarProdutoNaAPI(produto);
+  cadastrar(produto);
 });
-
-function adicionarProdutoNaAPI(produto) {
-  fetch(`${URL}/produtos`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(produto),
-  })
-    .then((resposta) => resposta.json())
-    .then((resposta) => {
-      listaDeProdutos.push(resposta);
-
-      popularTabela(listaDeProdutos);
-    });
-}
 
 function obterListaDeProdutos() {
   fetch(`${URL}/produtos`)
@@ -80,7 +63,7 @@ function criarTrComBaseNoProduto(produto) {
   tdNome.textContent = produto.nome;
   tdValor.textContent = produto.valor;
   tdEstoque.textContent = produto.quantidadeEstoque;
-  tdOpcoes.innerHTML = `<button onclick="editar(${produto.id})" class="btn btn-outline-info btn-sm">Editar</button>
+  tdOpcoes.innerHTML = `<button onclick="editar(${produto})" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#cadastroProduto">Editar</button>
   <button onclick="excluir(${produto.id})" class="btn btn-outline-info btn-sm">Excluir</button>`;
 
   tr.appendChild(tdId);
@@ -92,13 +75,27 @@ function criarTrComBaseNoProduto(produto) {
   tbody.appendChild(tr);
 }
 
-function cadastrar(id) {
-  fetch(`${URL}/produtos/${id}`, {
+function cadastrar(produto) {
+  fetch(`${URL}/produtos`, {
     method: "POST",
-    headers: "Content-Type: application/json",
-  }).then((reposta) => {
-    // DESAFIO: CADSTRAR UM PRODUTO
-  });
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(produto),
+  })
+    .then((resposta) => resposta.json())
+    .then((resposta) => {
+      listaDeProdutos.push(resposta);
+      popularTabela(listaDeProdutos);
+      fecharModal();
+    });
+}
+
+function editar(produto) {
+  //TODO: Verificar erro ao puxar produto
+  form.campoNome.value = produto.nome;
+  form.campoValor.value = produto.valor;
+  form.campoQuantidade.value = produto.estoque;
 }
 
 function excluir(id) {
@@ -111,4 +108,9 @@ function excluir(id) {
     listaDeProdutos.splice(indice, 1);
     popularTabela(listaDeProdutos);
   });
+}
+
+function fecharModal() {
+  const instanciaModal = bootstrap.Modal.getInstance(modal);
+  instanciaModal.hide();
 }
