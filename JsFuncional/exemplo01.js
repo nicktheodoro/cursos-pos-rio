@@ -2,7 +2,7 @@
 const frutas = ["Banana", "Limão", "Pessêgo", "Uva"];
 
 frutas.forEach((fruta) => {
-    return console.log(fruta)
+  // console.log(fruta)
 });
 
 // --> MAP <--
@@ -40,8 +40,25 @@ let soma = numeros.reduce((acumulador, numero) => {
 }, 0);
 
 let somaTotalProdutos = carrinhoCompra.reduce((acc, obj) => {
-  return acc + (obj.valor * obj.quantidade);
+  return acc + obj.valor * obj.quantidade;
 }, 0);
 
 // console.log(soma);
 // console.log(somaTotalProdutos);
+
+// --> FILTER <--
+const quantideMaiorCinco = carrinhoCompra.filter((produto) => {
+  return produto.quantidade >= 5;
+});
+
+const valorMenorCinco = carrinhoCompra.filter((produto) => {
+  return produto.valor < 5;
+});
+
+const pao = carrinhoCompra.filter((produto) => {
+  return produto.nome.toLocaleLowerCase() === "pão";
+});
+
+// console.log(quantideMaiorCinco);
+// console.log(valorMenorCinco);
+// console.log(pao);
